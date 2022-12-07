@@ -1,0 +1,483 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+@viewport {
+  zoom: 1.0;
+  width: extend-to-zoom;
+}
+
+@-ms-viewport {
+  width: extend-to-zoom;
+  zoom: 1.0;
+}
+
+body {
+  background: #00000f;
+  margin: 0px;
+
+  background-image: url('../images/stars01.png');
+  background-position: 0px 0px;
+  background-repeat: repeat;
+}
+
+.container {
+  width: 100%;
+}
+
+div.banner {
+  width: 100%;
+  height: 500px;
+  margin: 0px auto;
+  padding-bottom: 0px;
+  background-color: #00000f;
+
+  background-image: url('../images/starship01sm.png'), url('../images/planet01sm.png'), url('../images/planet02sm.png'), url('../images/comet02.png'), url('../images/comet02.png'), url('../images/stars02.png'), url('../images/stars01.png');
+  background-position: 20% 50%, 125% 40%, 180% 60%, 1100% 600%, 300% 150%, 1000px 0px, 500px 0px;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, repeat, repeat;
+
+  animation: animate-banner linear 50s 100;
+}
+
+@keyframes animate-banner {
+  from {
+    background-position: 20% 50%, 125% 40%, 180% 60%, 1100% 175%, 300% 105%, 1000px 0px, 500px 0px;
+  }
+
+  to {
+    background-position: 20% 50%, -125% 40%, -20% 60%, -1100% -125%, -1000% -175%, -0px 0px, 0px 0px;
+  }
+}
+
+span.title1 {
+  color: #fefefe;
+  font-weight: bolder;
+  text-shadow: 1px 1px 1px #edfe98, -1px -2px 1px #210101;
+  text-align: center;
+  display: table;
+  margin: 0px auto;
+  background-color: rgba(200, 255, 127, 0.01);
+  z-index: 2;
+
+  font-size: 1.2em;
+  padding: 45px 5px 5px 5px;
+}
+
+span.title2 {
+  color: #edfedc;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #769832;
+  text-align: center;
+  display: table;
+  margin: 0 auto;
+  padding: 1px 6px;
+  background-color: rgba(200, 255, 127, 0.01);
+  z-index: 2;
+
+  font-size: 1.0em;
+}
+
+span#topSubTitle {
+  font-size: 0.9em;
+  padding: 120px 2px 10px 2px;
+}
+
+span#topSubTitle2 {
+  color: rgba(31, 191, 31, 1);
+  text-shadow: 0px 2px 1px #fefefe;
+  font-weight: normal;
+  z-index: 2;
+
+  font-size: 1em;
+  padding: 5% 5px 5px 5px;
+}
+
+span.content {
+  color: #ffffff;
+  text-align: center;
+  display: table;
+  margin: 0 auto;
+  background-color: rgba(200, 255, 127, 0.01);
+  z-index: 2;
+  text-decoration: none;
+
+  font-size: 1em;
+  padding: 5px 5%;
+}
+
+div.menus {
+  display: table;
+  padding: 1px 1px 5px 1px;
+  text-align: center;
+  position: fixed;
+  top: 1%;
+  background-color: rgba(31, 31, 31, 0.7);
+  z-index: 3;
+
+  margin: 1px 0%;
+  left: 0%;
+}
+
+span.menu {
+  color: #fefefe;
+  font-weight: bolder;
+  text-shadow: 1px 1px 4px #2222aa, -1px -1px 2px #22fe22;
+  text-align: center;
+  margin: 1px auto;
+  background-color: rgba(200, 255, 127, 0.1);
+  z-index: 2;
+}
+
+
+#home,
+#services,
+#demos,
+#contact {
+  font-size: 1.25em;
+  width: 48%;
+  display: inline-block;
+}
+
+#home:hover,
+#services:hover,
+#demos:hover,
+#contact:hover {
+  font-size: 1.3em;
+}
+
+.menu:hover,
+.demosTitle:hover,
+.contactContent:hover {
+  color: #fefefe;
+  font-weight: bolder;
+  text-shadow: 1px 1px 2px #333333, -1px -1px 4px #ff9900;
+  background-color: rgba(200, 255, 127, 0.3);
+
+  font-size: 1.05em;
+}
+
+div#servicesDiv,
+div#demosDiv,
+div#contactDiv {
+  margin-top: 80px;
+  display: none;
+  /*    visibility: hidden;
+    opacity: 0;*/
+  padding-bottom: 20px;
+}
+
+a.demosTitle,
+a.contactContent,
+a:link,
+a:visited {
+  text-decoration: none !important;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+
+
+@media screen and (min-width: 641px) {
+
+  div.banner {
+    width: 100%;
+    background-image: url('../images/starship01sm.png'), url('../images/planet01sm.png'), url('../images/planet02sm.png'), url('../images/comet02.png'), url('../images/comet02.png'), url('../images/stars02.png'), url('../images/stars01.png');
+    background-position: 20% 55%, 125% 40%, 180% 60%, 1100% 600%, 300% 150%, 1000px 0px, 500px 0px;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, repeat, repeat;
+
+    animation: animate-banner641 linear 50s 100;
+  }
+
+
+  span.title1 {
+    font-size: 1.2em;
+    padding: 45px 3px 5px 3px;
+  }
+
+  span.title2 {
+    font-size: 1.2em;
+  }
+
+  span#topSubTitle {
+    font-size: 1em;
+    padding: 120px 2px 20px 10px;
+  }
+
+  span#topSubTitle2 {
+    font-size: 1.1em;
+    padding: 10px 5px 5px 5px;
+  }
+
+  span.content {
+    font-size: 1em;
+    padding: 5px 5%;
+    text-decoration: none;
+  }
+
+  div.menus {
+    margin: 0px 0;
+    left: 5%;
+  }
+
+  span.menu {
+    font-size: 1.2em;
+  }
+
+  #home,
+  #services,
+  #demos,
+  #contact {
+    font-size: 1.2em;
+    width: auto;
+    display: inline;
+  }
+
+  #home:hover,
+  #services:hover,
+  #demos:hover,
+  #contact:hover {
+    font-size: 1.3em;
+  }
+
+  .demosTitle:hover,
+  .contactContent:hover {
+    font-size: 1.1em;
+  }
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 961px) {
+  div.banner {
+    background-image: url('../images/starship01.png'), url('../images/planet01.png'), url('../images/planet02.png'), url('../images/comet02.png'), url('../images/comet02.png'), url('../images/stars02.png'), url('../images/stars01.png');
+    background-position: 20% 55%, 125% 30%, 180% 300px, 1100% 600%, 300% 150%, 1000px 0px, 500px 0px;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, repeat, repeat;
+
+    animation: animate-banner961 linear 50s 100;
+  }
+
+  span.title1 {
+    font-size: 1.7em;
+    padding: 45px 3px 5px 3px;
+  }
+
+  span.title2 {
+    font-size: 1.3em;
+  }
+
+  span#topSubTitle {
+    font-size: 1.1em;
+    padding: 60px 20% 90px 20%;
+  }
+
+  span#topSubTitle2 {
+    font-size: 1.4em;
+    padding: 40px 10px 10px 10px;
+  }
+
+  span.content {
+    font-size: 1.2em;
+    padding: 10px 5%;
+  }
+
+  div.menus {
+    margin: 0px 0;
+    left: 5%;
+  }
+
+  #home,
+  #services,
+  #demos,
+  #contact {
+    font-size: 1.3em;
+    width: auto;
+    display: inline;
+  }
+
+  #home:hover,
+  #services:hover,
+  #demos:hover,
+  #contact:hover {
+    font-size: 1.4em;
+  }
+
+  .demosTitle:hover,
+  .contactContent:hover {
+    font-size: 1.1em;
+  }
+}
+
+
+@keyframes animate-banner641 {
+  from {
+    background-position: 20% 55%, 125% 40%, 180% 60%, 1100% 175%, 300% 105%, 1000px 0px, 500px 0px;
+  }
+
+  to {
+    background-position: 20% 55%, -125% 40%, -20% 60%, -1100% -125%, -1000% -175%, -0px 0px, 0px 0px;
+  }
+}
+
+
+@keyframes animate-banner961 {
+  from {
+    background-position: 20% 55%, 125% 30%, 180% 300px, 1100% 600%, 300% 150%, 1000px 0px, 500px 0px;
+  }
+
+  to {
+    background-position: 20% 55%, -125% 30%, -20% 300px, -1100% -600%, -1000% -350%, -0px 0px, 0px 0px;
+  }
+}
+
+
+
+
+@media screen and (max-width: 318px) {
+  body {
+    width: 320px;
+  }
+
+  .container {
+    width: 320px;
+  }
+  div.menus {
+    width: 320px;
+  }
+}
+
+
+
+/*
+animate css
+*/
+
+@charset "UTF-8";
+
+.animated {
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+.animated.infinite {
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes zoomInDown {
+  from {
+    opacity: 0;
+    transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
+    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+  }
+
+  60% {
+    opacity: 1;
+    transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+  }
+}
+
+.zoomInDown {
+  animation-name: zoomInDown;
+  animation-duration: 4s;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+  animation-duration: 2s;
+}
+
+
+
+/* serviceGlimpseAnim */
+
+#serviceGlimpseDiv{
+	font-family: 'Consolas';
+	color: #cecebe;
+	width: 50%;
+	min-width: 320px;
+	min-height: 120px;	
+	position: absolute;
+	left: 50%;	
+	text-align: center;
+	overflow: hidden;	
+	transform: translate(-50%, -20%);
+}
+
+.services {
+	position: absolute;
+  display: block;
+	top: 110%;
+	opacity: 0;  
+  width: 98%;  
+  font-size: 0.8em;
+  animation-name: serviceGlimpseAnim;
+	animation-duration: 50s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+@keyframes serviceGlimpseAnim {
+	0%, 5% { top: 110%; opacity: 0; }
+  5%,10% { top: 20%; opacity: 1; }
+  15%, 100% { top: -110%; opacity: 0; }
+}
+
+.service-1{	
+	animation-delay: 0s;
+}
+
+.service-2{	
+	animation-delay: 5s;
+}
+
+.service-3{
+	animation-delay: 10s;
+}
+
+.service-4{
+	animation-delay: 15s;
+}
+
+.service-5{
+	animation-delay: 20s;
+}
+
+.service-6{
+	animation-delay: 25s;
+}
+
+.service-7{
+	animation-delay: 30s;
+}
+
+.service-8{
+	animation-delay: 35s;
+}
+
+.service-9{
+	animation-delay: 40s;
+}
+
+.service-10{
+	animation-delay: 45s;
+}
+
