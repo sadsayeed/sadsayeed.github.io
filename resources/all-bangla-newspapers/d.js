@@ -368,8 +368,9 @@ let d={
 };
 
 let dt = ((new Date().getMonth()+1)+"-"+new Date().getDate());
+let dt2 = (new Date().getDate())+"-"+(new Date().getMonth()+1);
 
 
-document.getElementById("extraInfo").innerHTML = ([...dt].reverse().join("") +" : [ " + d[dt][0] + "; &nbsp;" + d[dt][1] + "; &nbsp;" + d[dt][2] + "; &nbsp;" + d[dt][3] + "; &nbsp;" + d[dt][4] + "; &nbsp;" + d[dt][5] + "; " + " ]");
+document.getElementById("extraInfo").innerHTML = (dt2 +" : [ " + d[dt][0] + "; &nbsp;" + d[dt][1] + "; &nbsp;" + d[dt][2] + "; &nbsp;" + d[dt][3] + "; &nbsp;" + d[dt][4] + "; &nbsp;" + d[dt][5] + "; " + " ]");
 //console.log(d[new Date().getMonth()+1+"-"+new Date().getDate()]);
 d=null;
